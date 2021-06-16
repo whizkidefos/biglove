@@ -1,0 +1,115 @@
+.courses-and-coaching-banner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 3rem;
+
+	.banner-image-block,
+	.banner-title-block {
+		width: 50%;
+	}
+
+	.banner-title-block {
+		margin-left: -4rem;
+	}
+
+	h1 {
+		color: $red;
+		font-size: 75px;
+		font-weight: bold;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+}
+
+.courses-and-coaching {
+	background: #efefef;
+	padding: 5rem 0;
+
+	h3 {
+		color: $red;
+		font-size: 55px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
+.all-courses {
+	padding: 3rem 0;
+}
+
+.course-block {
+	background: white;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	width: 100%;
+	height: 450px;
+
+	.course-block-image,
+	.course-block-content {
+		width: 50%;
+	}
+
+	img {
+		height: 450px;
+		object-fit: cover;
+	}
+
+	.course-block-content {
+		color: $purple;
+		padding: 30px;
+
+		.price {
+			color: $red;
+		}
+	}
+
+	.difficulty-level {
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+
+		.heart-icons {
+			margin-left: 20px;
+		}
+	}
+}
+
+@media (max-width: 980px) {
+	.courses-and-coaching-banner {
+		flex-direction: column;
+
+		.banner-image-block,
+		.banner-title-block {
+			width: 100%;
+		}
+
+		.banner-title-block {
+			margin-left: 2rem;
+			margin-top: -4rem;
+		}
+	}
+
+	.course-block {
+		flex-direction: column;
+		height: auto;
+
+		.course-block-image,
+		.course-block-content {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 680px) {
+	.courses-and-coaching-banner {
+		h1 {
+			font-size: 45px;
+		}
+	}
+}

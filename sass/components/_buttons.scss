@@ -1,0 +1,33 @@
+.btn-purple {
+	background: transparent;
+	border: 2px solid $purple;
+	border-radius: 30px;
+	color: $purple;
+	// display: block;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 10px 15px;
+	transition: all 250ms ease;
+
+	&:hover {
+		background: $purple;
+		color: white;
+	}
+}
+
+.btn-red {
+	background: transparent;
+	border: 2px solid $red;
+	border-radius: 30px;
+	color: $red;
+	// display: block;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 10px 15px;
+	transition: all 250ms ease;
+
+	&:hover {
+		background: $red;
+		color: white;
+	}
+}

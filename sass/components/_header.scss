@@ -1,0 +1,37 @@
+.site-header {
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 5%;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+
+	a {
+		color: $purple;
+	}
+}
+
+// .main-navigation {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	margin-left: auto;
+// }
+
+.nav-links {
+	font-weight: 600;
+	text-transform: uppercase;
+
+	a {
+		padding: 0 20px;
+	}
+}
+
+.nav-icons a i {
+	font-size: 20px;
+	padding: 0 10px;
+}

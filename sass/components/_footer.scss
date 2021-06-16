@@ -1,0 +1,42 @@
+footer {
+	background: $purple;
+	color: white;
+	padding: 2rem 0;
+
+	a {
+		color: white;
+	}
+}
+
+.footer-menu a {
+	display: block;
+	padding: 10px 0;
+	text-transform: uppercase;
+
+	&:hover {
+		color: white;
+		opacity: 0.8;
+	}
+}
+
+.footer-links {
+	p {
+		font-weight: 700;
+	}
+
+	span {
+		font-weight: normal;
+		margin-right: 20px;
+	}
+}
+
+.footer-icons a {
+	color: white;
+	font-size: 20px;
+	margin-right: 10px;
+
+	&:hover {
+		color: white;
+		opacity: 0.8;
+	}
+}

@@ -1,0 +1,26 @@
+.page-header {
+	background: #efefef;
+	color: $red;
+	display: flex;
+	padding: 3rem 0;
+
+	h1 {
+		font-size: 70px;
+		font-weight: bold;
+		max-width: 850px;
+		width: 100%;
+		margin: 0 auto;
+		text-transform: uppercase;
+	}
+}
+
+.page-content {
+	padding: 5rem 0;
+
+	article {
+		color: $purple;
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
