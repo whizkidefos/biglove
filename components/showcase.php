@@ -1,35 +1,33 @@
-<?php get_header();
-/**
- * Template Name: Courses and Coaching
- */
-$args = array( 'post_type' => 'courses', 'posts_per_page' => 10 );
-$the_query = new WP_Query( $args ); 
+<?php
+$args = array( 'post_type' => 'courses', 'posts_per_page' => 4 );
+$home_query = new WP_Query( $args ); 
 ?>
 
-<header class="inner-page-banner">
-    
-    <div class="banner-image-block">
-        <img src="<?php t(); ?>/images/courses-image.png" alt="courses page banner">
-    </div>
-    <div class="banner-title-block">
-        <h1>What we <br> get up to. </h1>
-    </div>
-    
-</header>
+<section class="showcase">
+    <article class="container welcome">
+        <div class="welcome-image">
+            <img src="<?php t(); ?>/images/welcome-image.png" alt="welcome image">
+        </div>
+        <div class="welcome-content">
+            <p>Welcome everyone</p>
+            <h2>the women's swim <br>club fuelled by <br>love and fun</h2>
+            <a href="<?php get_site_url(); ?>/about-blsc" class="btn-purple">Read more about us</a>
+        </div>
+    </article>
 
-<section class="courses-and-coaching">
-    <div class="container">
-        <h2 class="text-center">Courses & Coaching</h2>
-        <div class="all-courses">
-            <?php if ( $the_query->have_posts() ) : ?>
-            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <div class="course-block">
-                <div class="course-block-image">
+    <div class="container showcase-courses">
+        <h3 class="text-center">Courses & Coaching</h3>
+
+        <div class="showcase-cards">
+        <?php if ( $home_query->have_posts() ) : ?>
+        <?php while ( $home_query->have_posts() ) : $home_query->the_post(); ?>
+            <div class="custom-card">
+                <div class="custom-card-image">
                     <?php the_post_thumbnail(); ?>
                 </div>
-                <div class="course-block-content">
-                    <h4><?php the_title(); ?></h4>
-
+                <div class="custom-card-content">
+                    <h4><?php the_title() ?></h4>
+                    <p><?php echo wp_trim_words( get_the_content(), 22, '...' ); ?></p>
                     <div class="difficulty-level">
                         <h6>Difficulty level:</h6>
                         <?php if(get_field('difficulty_level') == '1'): ?>
@@ -82,20 +80,15 @@ $the_query = new WP_Query( $args );
                             </div>
                         <?php endif; ?>
                     </div>
-
-                    <h6 class="price">£<?php the_field('price'); ?> per session</h6>
-                    <p><?php echo wp_trim_words( get_the_content(), 40, '...' ); ?></p>
                     <br>
-                    <a href="<?php get_site_url(); ?>/connect-with-us" class="btn-red">Book your place</a>
+                    <a href="<?php the_permalink() ?>" class="btn-red">Learn more</a>
                 </div>
             </div>
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-            <?php else:  ?>
-            <p><?php _e( 'Sorry, no courses matched your criteria.' ); ?></p>
-            <?php endif; ?>
+        <?php endwhile;
+        wp_reset_postdata(); ?>
+        <?php else:  ?>
+        <p><?php _e( 'Sorry, no courses matched your criteria.' ); ?></p>
+        <?php endif; ?>
         </div>
     </div>
 </section>
-
-<?php get_footer(); ?>

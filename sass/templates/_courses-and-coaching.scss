@@ -1,8 +1,8 @@
-.courses-and-coaching-banner {
+.inner-page-banner {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	padding-bottom: 3rem;
+	padding-bottom: 5rem;
 
 	.banner-image-block,
 	.banner-title-block {
@@ -15,7 +15,7 @@
 
 	h1 {
 		color: $red;
-		font-size: 75px;
+		font-size: 90px;
 		font-weight: bold;
 		line-height: 1.2;
 		text-transform: uppercase;
@@ -26,10 +26,11 @@
 	background: #efefef;
 	padding: 5rem 0;
 
-	h3 {
+	h2 {
 		color: $red;
-		font-size: 55px;
+		font-size: 70px;
 		font-weight: bold;
+		letter-spacing: 3px;
 		text-transform: uppercase;
 	}
 }
@@ -66,6 +67,7 @@
 
 		.price {
 			color: $red;
+			font-weight: bold;
 		}
 	}
 

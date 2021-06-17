@@ -9,13 +9,13 @@
 <body>
     <header class="site-header">
         <div class="logo">
-            <a href="/">BigLove</a>
+            <a href="/"><img src="<?php t() ?>/images/logo.svg" alt="logo blue"></a>
         </div>
 
         <nav class="main-navigation">
             <div class="nav-links">
                 <a href="<?php get_site_url() ?>/about-blsc">about blsc</a>
-                <a href="<?php get_site_url() ?>/courses-coaching">courses & coaching</a>
+                <a href="<?php get_site_url() ?>/courses-and-coaching">courses & coaching</a>
                 <a href="<?php get_site_url() ?>/connect-with-us">connect with us</a>
             </div>
         </nav>

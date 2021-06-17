@@ -3,10 +3,9 @@
 	border: 2px solid $purple;
 	border-radius: 30px;
 	color: $purple;
-	// display: block;
 	font-weight: bold;
 	margin-top: 20px;
-	padding: 10px 15px;
+	padding: 10px 20px;
 	transition: all 250ms ease;
 
 	&:hover {
@@ -15,19 +14,36 @@
 	}
 }
 
-.btn-red {
+.btn-red,
+button.wpforms-submit {
 	background: transparent;
 	border: 2px solid $red;
 	border-radius: 30px;
 	color: $red;
-	// display: block;
 	font-weight: bold;
 	margin-top: 20px;
-	padding: 10px 15px;
+	padding: 10px 20px;
 	transition: all 250ms ease;
 
 	&:hover {
 		background: $red;
 		color: white;
+	}
+}
+
+form button.wpforms-submit,
+.wpforms-form input[type="submit"] {
+	background: transparent !important;
+	border: 2px solid $red !important;
+	border-radius: 30px !important;
+	color: $red !important;
+	font-weight: bold !important;
+	margin-top: 20px !important;
+	padding: 10px 20px !important;
+	transition: all 250ms ease !important;
+
+	&:hover {
+		background: $red !important;
+		color: white !important;
 	}
 }

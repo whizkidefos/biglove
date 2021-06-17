@@ -10,9 +10,11 @@
 	top: 0;
 	right: 0;
 	width: 100%;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
 
 	a {
 		color: $purple;
+		font-family: "HossRoundBetaG Bold", sans-serif !important;
 	}
 }
 

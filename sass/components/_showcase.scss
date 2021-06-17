@@ -1,0 +1,112 @@
+.showcase {
+	background: $light-gray;
+	margin: 5rem 0;
+
+	article {
+		display: flex;
+
+		.welcome-image {
+			margin-top: -7rem;
+		}
+
+		.welcome-content {
+			margin-top: -4rem;
+		}
+
+		p {
+			color: $purple;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-left: -6rem;
+			margin-bottom: 0;
+		}
+
+		h2 {
+			color: $red;
+			font-family: "HossRoundBetaG Heavy", sans-serif !important;
+			font-size: 60px;
+			margin-left: -6rem;
+			margin-bottom: 3rem;
+			text-transform: uppercase;
+		}
+
+		a {
+			margin: 3rem;
+		}
+	}
+}
+
+.showcase-courses {
+	padding: 7rem 0 5rem 0;
+
+	h3 {
+		color: $purple;
+		font-size: 50px;
+		font-family: "HossRoundBetaG Heavy", sans-serif !important;
+		padding: 1rem 0 2rem 0;
+		text-transform: uppercase;
+	}
+}
+
+.showcase-cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.custom-card {
+	width: calc(50% - 10px);
+	margin-bottom: 20px;
+	border-radius: 0 0 10px 10px;
+	background: white;
+
+	img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+	}
+
+	&-content {
+		color: $purple;
+		padding: 25px;
+	}
+}
+
+@media (max-width: 980px) {
+	.showcase article {
+		flex-direction: column;
+
+		.welcome-content {
+			margin-top: 2rem;
+		}
+
+		h2,
+		p {
+			margin-left: 0;
+		}
+
+		h2 {
+			font-size: 50px;
+		}
+
+		a {
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.custom-card {
+		width: 100%;
+		margin: 10px;
+	}
+}
+
+@media (max-width: 550px) {
+	.showcase article {
+		h2 {
+			font-size: 30px;
+		}
+	}
+}

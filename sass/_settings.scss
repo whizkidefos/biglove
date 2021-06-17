@@ -1,9 +1,52 @@
-$purple: #322883;
-$red: #e2345a;
+$purple: #312783;
+$red: #e2335a;
+$blue: #0090df;
+$light-gray: #efefef;
+
+@font-face {
+	font-family: "HossRoundBetaG Regular";
+	src: url("../fonts/HossRoundBetaG_Regular.otf");
+}
+
+@font-face {
+	font-family: "HossRoundBetaG Bold";
+	src: url("../fonts/HossRoundBetaG_Bold.otf");
+}
+
+@font-face {
+	font-family: "HossRoundBetaG Black";
+	src: url("../fonts/HossRoundBetaG_Black.otf");
+}
+
+@font-face {
+	font-family: "HossRoundBetaG Heavy";
+	src: url("../fonts/HossRoundBetaG_Heavy.otf");
+}
 
 ::selection {
 	background: $purple;
 	color: white;
+}
+
+h1 {
+	font-family: "HossRoundBetaG Heavy", sans-serif !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "HossRoundBetaG Bold", sans-serif !important;
+}
+
+body,
+p,
+a,
+li,
+em,
+small {
+	font-family: "HossRoundBetaG Regular", sans-serif;
 }
 
 a {
@@ -20,23 +63,22 @@ img {
 
 //Scrollbar
 
-/* Works on Firefox */
-* {
-	scrollbar-width: thin;
-	scrollbar-color: $purple #fefefe;
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
 }
 
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-	width: 12px;
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
 }
 
-*::-webkit-scrollbar-track {
-	background: #fefefe;
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $purple;
 }
 
-*::-webkit-scrollbar-thumb {
-	background-color: $purple;
-	border-radius: 20px;
-	border: 3px solid #fefefe;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $red;
 }
