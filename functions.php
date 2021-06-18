@@ -2,16 +2,14 @@
 
 // Theme Files
 function biglove_files() {
-    if ( !is_admin() ) wp_deregister_script('jquery');
-
-    //wp_enqueue_style( "sofia_pro_font", "https://use.typekit.net/ght2kva.css" );
+    // if ( !is_admin() ) wp_deregister_script('jquery');
    
     wp_enqueue_style( "bootstrap_css", get_template_directory_uri()."/css/bootstrap.min.css" );
     wp_enqueue_style( "swiper_css", get_template_directory_uri()."/css/swiper.min.css" );
     wp_enqueue_style( "app_css", get_template_directory_uri()."/css/app.css" );
 
     wp_enqueue_script( "font_awesome_kit", "https://kit.fontawesome.com/c95cb70159.js", array(), '5.15.1', true );
-    wp_enqueue_script( 'jquery', get_template_directory_uri(). '/js/jquery.min.js', array(), '3.6.0', true );
+    // wp_enqueue_script( 'jquery', get_template_directory_uri(). '/js/jquery.min.js', array(), '3.6.0', true );
     wp_enqueue_script( 'bootstrap_js', get_template_directory_uri(). '/js/bootstrap.min.js', array(), '5.1.0', true );
     
 	wp_enqueue_script( 'swiper_js', get_template_directory_uri().'/js/swiper.min.js', array(), '6.7.0', true );
@@ -55,8 +53,7 @@ function biglove_setup() {
         register_nav_menus( 
             array (
                 'main-menu'         => 'Main Menu',
-                'useful-links'      => 'Useful links',
-                'quick-links'       => 'Quick links',
+                'footer-links'      => 'Footer links',
             )
         );
     }
@@ -67,4 +64,29 @@ add_action( 'after_setup_theme', 'biglove_setup' );
 /*============ Custom Functions ===========*/
 function t() {
     echo esc_url( get_template_directory_uri() );
+}
+
+// ACF Options
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'BLSC General Settings',
+		'menu_title'	=> 'BLSC Options',
+		'menu_slug' 	=> 'blsc-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Theme Header Settings',
+	// 	'menu_title'	=> 'Header',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
+	
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Theme Footer Settings',
+	// 	'menu_title'	=> 'Footer',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
+	
 }

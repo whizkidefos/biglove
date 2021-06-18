@@ -1,0 +1,48 @@
+.what-swimmers-say {
+	padding: 5rem 0;
+
+	h3 {
+		color: $red;
+		font-family: "HossRoundBetaG Heavy", sans-serif !important;
+		font-size: 35px;
+		text-transform: uppercase;
+	}
+
+	img {
+		display: block;
+		width: 80px;
+		margin: 48px auto;
+		text-align: center;
+	}
+
+	.quotes {
+		color: $purple;
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 20px 20px;
+	}
+
+	.quotes-control {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.quote-button-prev,
+	.quote-button-next {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border: 2px solid $purple;
+		color: $purple;
+		margin: 0 10px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 768px) {
+}

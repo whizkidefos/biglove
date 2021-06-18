@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "HossRoundBetaG Light";
+  src: url("../fonts/HossRoundBetaG_Light.otf");
+}
+
+@font-face {
   font-family: "HossRoundBetaG Regular";
   src: url("../fonts/HossRoundBetaG_Regular.otf");
 }
@@ -28,6 +33,10 @@
   color: white;
 }
 
+main {
+  margin-top: 85px;
+}
+
 h1 {
   font-family: "HossRoundBetaG Heavy", sans-serif !important;
 }
@@ -46,7 +55,8 @@ a,
 li,
 em,
 small {
-  font-family: "HossRoundBetaG Regular", sans-serif;
+  font-family: "HossRoundBetaG Light", sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -81,6 +91,65 @@ img {
   background: #e2335a;
 }
 
+.inner-page-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5rem;
+}
+
+.inner-page-banner .banner-image-block,
+.inner-page-banner .banner-title-block {
+  width: 50%;
+}
+
+.inner-page-banner .banner-title-block {
+  margin-left: -4rem;
+}
+
+.inner-page-banner h1 {
+  color: #e2335a;
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.inner-page-banner img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 980px) {
+  .inner-page-banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inner-page-banner .banner-image-block,
+  .inner-page-banner .banner-title-block {
+    width: 100%;
+  }
+  .inner-page-banner .banner-title-block {
+    margin-left: 2rem;
+    margin-top: -4rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .inner-page-banner h1 {
+    font-size: 45px;
+  }
+}
+
 .site-header {
   background: white;
   display: -webkit-box;
@@ -98,8 +167,10 @@ img {
   top: 0;
   right: 0;
   width: 100%;
+  height: 85px;
   -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 20;
 }
 
 .site-header a {
@@ -312,6 +383,10 @@ img {
   padding: 5rem 0;
 }
 
+.join-the-club-content {
+  padding-right: 3rem;
+}
+
 .join-the-club h2 {
   color: #e2335a;
   font-family: "HossRoundBetaG Heavy", sans-serif !important;
@@ -319,8 +394,132 @@ img {
   text-transform: uppercase;
 }
 
+.join-the-club p {
+  max-width: 400px;
+  width: 100%;
+}
+
 .join-the-club span {
   font-weight: 600;
+}
+
+div.wpforms-container-full .wpforms-form input[type="date"],
+div.wpforms-container-full .wpforms-form input[type="datetime"],
+div.wpforms-container-full .wpforms-form input[type="datetime-local"],
+div.wpforms-container-full .wpforms-form input[type="email"],
+div.wpforms-container-full .wpforms-form input[type="month"],
+div.wpforms-container-full .wpforms-form input[type="number"],
+div.wpforms-container-full .wpforms-form input[type="password"],
+div.wpforms-container-full .wpforms-form input[type="range"],
+div.wpforms-container-full .wpforms-form input[type="search"],
+div.wpforms-container-full .wpforms-form input[type="tel"],
+div.wpforms-container-full .wpforms-form input[type="text"],
+div.wpforms-container-full .wpforms-form input[type="time"],
+div.wpforms-container-full .wpforms-form input[type="url"],
+div.wpforms-container-full .wpforms-form input[type="week"],
+div.wpforms-container-full .wpforms-form select,
+div.wpforms-container-full .wpforms-form textarea {
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px !important;
+  color: #312783 !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  float: none;
+  font-size: 16px;
+  border: 3px solid #efefef !important;
+  padding: 6px 10px;
+  height: 40px;
+  width: 100%;
+  line-height: 1.3;
+}
+
+div.wpforms-container-full .wpforms-form textarea {
+  resize: none;
+}
+
+.what-swimmers-say {
+  padding: 5rem 0;
+}
+
+.what-swimmers-say h3 {
+  color: #e2335a;
+  font-family: "HossRoundBetaG Heavy", sans-serif !important;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.what-swimmers-say img {
+  display: block;
+  width: 80px;
+  margin: 48px auto;
+  text-align: center;
+}
+
+.what-swimmers-say .quotes {
+  color: #312783;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+.what-swimmers-say .quotes-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.what-swimmers-say .quote-button-prev,
+.what-swimmers-say .quote-button-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #312783;
+  color: #312783;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.qualifications {
+  color: #312783;
+}
+
+.qualifications .heart-block {
+  padding-bottom: 100px;
+}
+
+.qualifications img {
+  width: 120px;
+  padding: 10px;
+}
+
+.qualifications h3 {
+  font-family: "HossRoundBetaG Heavy", sans-serif !important;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.qualifications h6 {
+  display: block;
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .btn-purple {
@@ -390,10 +589,6 @@ footer a {
   letter-spacing: 2px;
 }
 
-footer img {
-  width: 90%;
-}
-
 .footer-menu a {
   display: block;
   padding: 10px 0;
@@ -459,33 +654,84 @@ footer img {
   margin: 0 auto;
 }
 
-.inner-page-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 5rem;
+.single-course-content {
+  color: #312783;
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.inner-page-banner .banner-image-block,
-.inner-page-banner .banner-title-block {
-  width: 50%;
-}
-
-.inner-page-banner .banner-title-block {
-  margin-left: -4rem;
-}
-
-.inner-page-banner h1 {
+.single-course-content .price {
   color: #e2335a;
-  font-size: 90px;
+  font-weight: 600;
+}
+
+.single-course-content h2 {
+  color: #e2335a;
+  font-family: "HossRoundBetaG Heavy", sans-serif !important;
+  font-size: 70px;
   font-weight: bold;
-  line-height: 1.2;
+  letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.single-course-content form {
+  text-align: left !important;
+}
+
+.inner-page-banner .course-page-title h1 {
+  font-size: 65px;
+}
+
+.about {
+  color: #312783;
+  padding: 2rem 0 5rem 0;
+}
+
+.about h2 {
+  color: #e2335a;
+  font-family: "HossRoundBetaG Heavy", sans-serif !important;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.about-intro {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.about strong {
+  font-weight: bold;
+}
+
+.lisa {
+  background: #efefef;
+  margin-top: 5rem;
+  padding: 6rem 3rem;
+  position: relative;
+}
+
+.lisa img {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+  .lisa {
+    padding: 4rem 1rem 2rem 1rem;
+  }
 }
 
 .courses-and-coaching {
@@ -495,6 +741,7 @@ footer img {
 
 .courses-and-coaching h2 {
   color: #e2335a;
+  font-family: "HossRoundBetaG Heavy", sans-serif !important;
   font-size: 70px;
   font-weight: bold;
   letter-spacing: 3px;

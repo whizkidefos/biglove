@@ -4,6 +4,11 @@ $blue: #0090df;
 $light-gray: #efefef;
 
 @font-face {
+	font-family: "HossRoundBetaG Light";
+	src: url("../fonts/HossRoundBetaG_Light.otf");
+}
+
+@font-face {
 	font-family: "HossRoundBetaG Regular";
 	src: url("../fonts/HossRoundBetaG_Regular.otf");
 }
@@ -28,6 +33,10 @@ $light-gray: #efefef;
 	color: white;
 }
 
+main {
+	margin-top: 85px;
+}
+
 h1 {
 	font-family: "HossRoundBetaG Heavy", sans-serif !important;
 }
@@ -46,7 +55,8 @@ a,
 li,
 em,
 small {
-	font-family: "HossRoundBetaG Regular", sans-serif;
+	font-family: "HossRoundBetaG Light", sans-serif;
+	font-weight: 300;
 }
 
 a {
@@ -81,4 +91,59 @@ img {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: $red;
+}
+
+// Inner Page Banner
+.inner-page-banner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 5rem;
+
+	.banner-image-block,
+	.banner-title-block {
+		width: 50%;
+	}
+
+	.banner-title-block {
+		margin-left: -4rem;
+	}
+
+	h1 {
+		color: $red;
+		font-size: 90px;
+		font-weight: bold;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	img {
+		width: 100%;
+		height: 550px;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 980px) {
+	.inner-page-banner {
+		flex-direction: column;
+
+		.banner-image-block,
+		.banner-title-block {
+			width: 100%;
+		}
+
+		.banner-title-block {
+			margin-left: 2rem;
+			margin-top: -4rem;
+		}
+	}
+}
+
+@media (max-width: 680px) {
+	.inner-page-banner {
+		h1 {
+			font-size: 45px;
+		}
+	}
 }

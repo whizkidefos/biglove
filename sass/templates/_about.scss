@@ -1,0 +1,46 @@
+.about {
+	color: $purple;
+	padding: 2rem 0 5rem 0;
+
+	h2 {
+		color: $red;
+		font-family: "HossRoundBetaG Heavy", sans-serif !important;
+		font-size: 70px;
+		text-transform: uppercase;
+	}
+
+	&-intro {
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 3rem;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+}
+
+.lisa {
+	background: $light-gray;
+	margin-top: 5rem;
+	padding: 6rem 3rem;
+	position: relative;
+
+	img {
+		position: absolute;
+		top: -1rem;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 120px;
+		height: 120px;
+		object-fit: cover;
+		border-radius: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.lisa {
+		padding: 4rem 1rem 2rem 1rem;
+	}
+}

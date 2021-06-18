@@ -1,33 +1,10 @@
-.inner-page-banner {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	padding-bottom: 5rem;
-
-	.banner-image-block,
-	.banner-title-block {
-		width: 50%;
-	}
-
-	.banner-title-block {
-		margin-left: -4rem;
-	}
-
-	h1 {
-		color: $red;
-		font-size: 90px;
-		font-weight: bold;
-		line-height: 1.2;
-		text-transform: uppercase;
-	}
-}
-
 .courses-and-coaching {
 	background: #efefef;
 	padding: 5rem 0;
 
 	h2 {
 		color: $red;
+		font-family: "HossRoundBetaG Heavy", sans-serif !important;
 		font-size: 70px;
 		font-weight: bold;
 		letter-spacing: 3px;

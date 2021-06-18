@@ -1,7 +1,8 @@
+</main>
 <footer class="">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="footer-menu">
                     <a href="">about blsc</a>
                     <a href="">courses & coaching</a>
@@ -10,7 +11,7 @@
                     <a href="<?php get_site_url(); ?>/privacy-policy">privacy policy</a>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="footer-links">
                     <p><span><i class="fas fa-phone"></i> Call us on:</span>07803 715 240</p>
                     <p><span><i class="far fa-envelope"></i> Email us via:</span>bigloveswinclub@gmail.com</p>
@@ -20,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="footer-logo">
                     <a href="/"><img src="<?php t() ?>/images/logo-white.svg" alt="logo white"></a>
                 </div>

@@ -1,0 +1,25 @@
+.qualifications {
+	color: $purple;
+
+	.heart-block {
+		padding-bottom: 100px;
+	}
+
+	img {
+		width: 120px;
+		padding: 10px;
+	}
+
+	h3 {
+		font-family: "HossRoundBetaG Heavy", sans-serif !important;
+		font-size: 48px;
+		text-transform: uppercase;
+	}
+
+	h6 {
+		display: block;
+		max-width: 80%;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
