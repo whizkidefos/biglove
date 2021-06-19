@@ -685,6 +685,15 @@ footer a {
   font-size: 65px;
 }
 
+.page-not-found {
+  padding: 6rem 0;
+}
+
+.page-not-found h1 {
+  color: #e2335a;
+  font-size: 60px;
+}
+
 .about {
   color: #312783;
   padding: 2rem 0 5rem 0;
