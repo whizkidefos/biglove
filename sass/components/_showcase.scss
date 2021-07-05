@@ -1,12 +1,17 @@
 .showcase {
 	background: $light-gray;
-	margin: 5rem 0;
+	margin: 12rem 0 5rem 0;
 
 	article {
 		display: flex;
 
 		.welcome-image {
 			margin-top: -7rem;
+
+			img {
+				height: 500px;
+				object-fit: cover;
+			}
 		}
 
 		.welcome-content {
@@ -15,6 +20,7 @@
 
 		p {
 			color: $purple;
+			font-family: "HossRoundBetaG Regular";
 			font-weight: bold;
 			text-transform: uppercase;
 			margin-left: -6rem;
@@ -24,7 +30,7 @@
 		h2 {
 			color: $red;
 			font-family: "HossRoundBetaG Heavy", sans-serif !important;
-			font-size: 60px;
+			font-size: 70px;
 			margin-left: -6rem;
 			margin-bottom: 3rem;
 			text-transform: uppercase;

@@ -24,10 +24,22 @@
             <a href="https://facebook.com/blsc" target="_blank"><i class="fab fa-facebook-square"></i></a>
             <a href="https://instagram.com/blsc" target="_blank"><i class="fab fa-instagram"></i></a>
             <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="burger-bar"></span>
             </div>
         </div>
     </header>
+
+    <div class="mobile-navigation">
+        <nav class="main-navigation">
+            <ul class="nav-links">
+                <li><a href="<?php get_site_url() ?>/about-blsc">about blsc</a></li>
+                <li><a href="<?php get_site_url() ?>/courses-and-coaching">courses & coaching</a></li>
+                <li><a href="<?php get_site_url() ?>/connect-with-us">connect with us</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="https://facebook.com/blsc" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://instagram.com/blsc" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </div>
     <main>

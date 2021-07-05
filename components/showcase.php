@@ -3,14 +3,14 @@ $args = array( 'post_type' => 'courses', 'posts_per_page' => 4 );
 $home_query = new WP_Query( $args ); 
 ?>
 
-<section class="showcase">
+<section class="showcase" id="showcase">
     <article class="container welcome">
         <div class="welcome-image">
-            <img src="<?php t(); ?>/images/welcome-image.png" alt="welcome image">
+            <img src="<?php t(); ?>/images/welcome-image.jpg" alt="welcome image">
         </div>
         <div class="welcome-content">
             <p>Welcome everyone</p>
-            <h2>the women's swim <br>club fuelled by <br>love and fun</h2>
+            <h2>the liverpool <br>swimming club <br>for women</h2>
             <a href="<?php get_site_url(); ?>/about-blsc" class="btn-purple">Read more about us</a>
         </div>
     </article>

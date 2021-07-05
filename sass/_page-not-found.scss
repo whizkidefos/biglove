@@ -1,8 +1,13 @@
 .page-not-found {
-	padding: 6rem 0;
+	color: $purple;
+	padding: 12rem 0;
 
 	h1 {
 		color: $red;
 		font-size: 60px;
+	}
+
+	p {
+		padding: 20px 0;
 	}
 }

@@ -28,6 +28,8 @@
             </div>
         </div>
     </div>
+
+    <button onclick="topFunction()" id="backToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
 </footer>
 
 <?php wp_footer(); ?>

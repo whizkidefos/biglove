@@ -3,6 +3,7 @@ $red: #e2335a;
 $blue: #0090df;
 $light-gray: #efefef;
 
+// Fonts Files
 @font-face {
 	font-family: "HossRoundBetaG Light";
 	src: url("../fonts/HossRoundBetaG_Light.otf");
@@ -26,6 +27,12 @@ $light-gray: #efefef;
 @font-face {
 	font-family: "HossRoundBetaG Heavy";
 	src: url("../fonts/HossRoundBetaG_Heavy.otf");
+}
+
+// Global Styles
+html,
+body {
+	scroll-behavior: smooth;
 }
 
 ::selection {

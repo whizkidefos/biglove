@@ -1,7 +1,7 @@
 <section class="what-swimmers-say">
     <div class="container">
         <h3 class="text-center">What our swimmers are saying</h3>
-        <img src="<?php t(); ?>/images/starred-heart.svg" alt="heart with quote">
+        <img src="<?php t(); ?>/images/blue-heart-quote-icon.svg" alt="heart with quote">
         <article class="quotes text-center">
             <div class="quote-container swiper-container">
                 <div class="quote-wrapper swiper-wrapper">

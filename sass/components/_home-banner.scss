@@ -1,5 +1,6 @@
 .home-banner {
-	padding: 8rem 0 5rem 0;
+	padding: 4rem 0 4rem 0;
+	position: relative;
 
 	.container {
 		display: flex;
@@ -15,10 +16,19 @@
 }
 
 .big-love-image {
-	width: 65%;
+	width: auto;
+	height: 520px;
 	margin-left: -10rem;
 	position: relative;
 	z-index: -1;
+
+	.gray-heart-icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50px;
+		height: 50px;
+	}
 }
 
 .scroll-down {
@@ -29,7 +39,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 1rem auto 15rem auto;
+	margin: 8rem auto 0rem auto;
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
 
 	i {
 		color: $purple;
@@ -38,17 +51,48 @@
 }
 
 @media (max-width: 980px) {
+	.home-banner {
+		padding-bottom: 2rem;
+	}
+
 	.home-banner .container {
 		flex-direction: column;
 	}
 
 	.big-love-text {
-		width: 80%;
+		width: 100%;
+		height: 550px;
 		margin-bottom: -4rem;
 	}
 
 	.big-love-image {
 		margin-left: 0;
 		width: 100%;
+	}
+
+	.scroll-down {
+		margin-top: 4rem;
+	}
+}
+
+@media (max-width: 680px) {
+	.scroll-down {
+		display: none;
+	}
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
 	}
 }
