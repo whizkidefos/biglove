@@ -30,7 +30,7 @@
 }
 
 .nav-icons a i {
-	font-size: 20px;
+	font-size: 24px;
 	padding: 0 10px;
 }
 
@@ -38,20 +38,22 @@
 .burger {
 	position: fixed;
 	top: 38px;
-	right: 20px;
+	right: 5%;
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
 	transition: all 500ms ease-in-out;
 	z-index: 30;
+	display: none;
 }
 
 .burger-bar {
 	background-color: $purple;
+	border-radius: 3px;
 	display: block;
 	width: 100%;
 	height: 3px;
-	border-radius: 3px;
+	border-radius: 5px;
 
 	&::before,
 	&::after {
@@ -59,6 +61,7 @@
 		position: absolute;
 		width: 100%;
 		height: 3px;
+		border-radius: 5px;
 		background-color: $purple;
 		border-radius: 3px;
 		transition: all 500ms ease-in-out;
@@ -88,15 +91,21 @@
 }
 
 .mobile-navigation {
-	position: absolute;
+	position: fixed;
 	top: 85px;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background: white;
-	padding: 0 30px;
-
 	display: none;
 	z-index: 10;
+
+	img {
+		position: absolute;
+		bottom: 5rem;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 50px;
+	}
 
 	.main-navigation {
 		display: flex;
@@ -109,11 +118,16 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			width: 100%;
+			padding-left: 0;
 
 			li {
 				list-style: none;
 				border-bottom: 1px solid $light-gray;
-				padding: 20px 0;
+				display: block;
+				padding: 30px;
+				width: 100%;
+				text-align: center;
 			}
 
 			a {
@@ -137,6 +151,34 @@
 	}
 
 	.mobile-navigation {
+		display: none;
+
+		.nav-icons {
+			display: none;
+		}
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.site-header .nav-icons {
+		margin-right: 8%;
+	}
+}
+
+@media (max-width: 680px) {
+	.burger {
+		display: block;
+	}
+
+	.mobile-navigation {
+		.nav-icons {
+			display: block;
+		}
+	}
+
+	.site-header .nav-icons {
 		display: none;
 	}
 }

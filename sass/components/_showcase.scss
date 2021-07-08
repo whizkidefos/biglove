@@ -63,9 +63,11 @@
 
 .custom-card {
 	width: calc(50% - 10px);
+	height: 610px;
 	margin-bottom: 20px;
 	border-radius: 0 0 10px 10px;
 	background: white;
+	position: relative;
 
 	img {
 		width: 100%;
@@ -76,6 +78,12 @@
 	&-content {
 		color: $purple;
 		padding: 25px;
+	}
+
+	a {
+		position: absolute;
+		bottom: 20px;
+		left: 25px;
 	}
 }
 
@@ -100,11 +108,16 @@
 			margin: 0;
 		}
 	}
+
+	.custom-card {
+		height: 650px;
+	}
 }
 
 @media (max-width: 768px) {
 	.custom-card {
 		width: 100%;
+		height: 650px;
 		margin: 10px;
 	}
 }

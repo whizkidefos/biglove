@@ -3,9 +3,14 @@ jQuery(document).ready(function ($) {
 	$(".burger").click(function () {
 		$(".burger").toggleClass("open");
 		$(".mobile-navigation").slideToggle('slow');
+    
+    // if('open' == true) {
+    //   $('body').css('overflow', 'hidden');
+    // }
 	});
 });
 
+// Sliders
 var quote = new Swiper('.quote-container', {
     loop: true,
     autoplay: {
@@ -16,6 +21,46 @@ var quote = new Swiper('.quote-container', {
         nextEl: '.quote-button-next',
         prevEl: '.quote-button-prev',
       },
+});
+
+var gallery = new Swiper('.gallery-container', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  effect: 'coverflow',
+  grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 5,
+          slideShadows: true,
+        },
+  speed: 2000,
+  navigation: {
+      nextEl: '.gallery-button-next',
+      prevEl: '.gallery-button-prev',
+    },
+    breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    680: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    980: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+  }
 });
 
 // Back to top

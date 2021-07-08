@@ -30,8 +30,10 @@ $the_query = new WP_Query( $args );
                 <div class="course-block-content">
                     <h4><?php the_title(); ?></h4>
 
+                    <?php if (get_field( 'difficulty_level' )): ?>
                     <div class="difficulty-level">
                         <h6>Difficulty level:</h6>
+                        
                         <?php if(get_field('difficulty_level') == '1'): ?>
                             <div class="heart-icons">
                                 <i class="fas fa-heart"></i>
@@ -82,6 +84,7 @@ $the_query = new WP_Query( $args );
                             </div>
                         <?php endif; ?>
                     </div>
+                    <?php endif; ?>
 
                     <h6 class="price">£<?php the_field('price'); ?> per session</h6>
                     <p><?php echo wp_trim_words( get_the_content(), 40, '...' ); ?></p>

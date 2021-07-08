@@ -28,6 +28,8 @@ $home_query = new WP_Query( $args );
                 <div class="custom-card-content">
                     <h4><?php the_title() ?></h4>
                     <p><?php echo wp_trim_words( get_the_content(), 22, '...' ); ?></p>
+
+                    <?php if (get_field( 'difficulty_level' )): ?>
                     <div class="difficulty-level">
                         <h6>Difficulty level:</h6>
                         <?php if(get_field('difficulty_level') == '1'): ?>
@@ -80,6 +82,7 @@ $home_query = new WP_Query( $args );
                             </div>
                         <?php endif; ?>
                     </div>
+                    <?php endif; ?>
                     <br>
                     <a href="<?php the_permalink() ?>" class="btn-red">Learn more</a>
                 </div>
