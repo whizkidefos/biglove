@@ -21,7 +21,11 @@
                             <?php
                             $image = get_sub_field( 'image', 'options' );
                             if ( $image ) : ?>
-                                <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+
+                                <a href="<?php echo esc_url( $image['url'] ); ?>" class="image-link">
+                                    <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+                                </a>
+                                
                             <?php endif; ?>
 
                             <div class="gallery-card-content">

@@ -821,13 +821,17 @@ div.wpforms-container-full .wpforms-form textarea {
 .gallery-card {
   background: white;
   border-radius: 5px;
+  -webkit-transition: -webkit-transform 350ms;
+  transition: -webkit-transform 350ms;
+  transition: transform 350ms;
+  transition: transform 350ms, -webkit-transform 350ms;
 }
 
-.gallery-card:hover img {
-  padding: 5px;
-  -webkit-transition: all 550ms ease-in-out;
-  transition: all 550ms ease-in-out;
-  overflow: hidden;
+.gallery-card:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 2px 10px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 10px 6px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-card h4 {
@@ -838,10 +842,14 @@ div.wpforms-container-full .wpforms-form textarea {
   padding: 30px 20px;
 }
 
-.gallery-slide-active {
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
-  background: white;
+.gallery-card .image-link {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.gallery-slide-active:hover .gallery-card {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .gallery-controls {
@@ -879,6 +887,23 @@ div.wpforms-container-full .wpforms-form textarea {
 .gallery-controls .gallery-button-next:hover {
   background: #312783;
   color: white;
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
 }
 
 .btn-purple {

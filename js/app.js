@@ -3,11 +3,15 @@ jQuery(document).ready(function ($) {
 	$(".burger").click(function () {
 		$(".burger").toggleClass("open");
 		$(".mobile-navigation").slideToggle('slow');
-    
-    // if('open' == true) {
-    //   $('body').css('overflow', 'hidden');
-    // }
 	});
+
+  //Magnific Popup
+  $('.image-link').magnificPopup({
+    type:'image',
+    removalDelay: 100,
+    disableOn: 400
+  });
+
 });
 
 // Sliders

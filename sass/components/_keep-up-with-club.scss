@@ -31,12 +31,18 @@
 .gallery-card {
 	background: white;
 	border-radius: 5px;
+	transition: transform 350ms;
 
-	&:hover img {
-		padding: 5px;
-		transition: all 550ms ease-in-out;
-		overflow: hidden;
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: 2px 10px 6px rgba(0, 0, 0, 0.1);
 	}
+
+	// &:hover img {
+	// 	padding: 5px;
+	// 	transition: all 550ms ease-in-out;
+	// 	overflow: hidden;
+	// }
 
 	h4 {
 		padding: 30px;
@@ -45,11 +51,14 @@
 	&-content {
 		padding: 30px 20px;
 	}
+
+	.image-link {
+		transition: all 500ms;
+	}
 }
 
-.gallery-slide-active {
-	filter: blur(0px);
-	background: white;
+.gallery-slide-active:hover .gallery-card {
+	transform: translateY(-2px);
 }
 
 .gallery-controls {
@@ -76,4 +85,21 @@
 			color: white;
 		}
 	}
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
 }
