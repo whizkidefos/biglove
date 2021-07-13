@@ -183,13 +183,57 @@ img {
   font-family: "HossRoundBetaG Bold", sans-serif !important;
 }
 
-.nav-links {
+.main-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-navigation ul li {
   font-weight: 600;
+  list-style: none;
   text-transform: uppercase;
 }
 
-.nav-links a {
+.main-navigation ul li a {
   padding: 0 20px;
+  position: relative;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.main-navigation ul li a::after {
+  content: ". . .";
+  position: absolute;
+  bottom: -20px;
+  left: 45%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+.main-navigation ul li a:hover {
+  color: #0090df;
+}
+
+.main-navigation ul li a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main-navigation ul .menu-item.current-menu-item.current_page_item a {
+  color: #0090df;
+  position: relative;
+}
+
+.main-navigation ul .menu-item.current-menu-item.current_page_item a::after {
+  content: ". . .";
+  position: absolute;
+  bottom: -20px;
+  left: 45%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .nav-icons a i {
@@ -290,9 +334,10 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
-.mobile-navigation .main-navigation .nav-links {
+.mobile-navigation .main-navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,7 +355,7 @@ img {
   padding-left: 0;
 }
 
-.mobile-navigation .main-navigation .nav-links li {
+.mobile-navigation .main-navigation ul li {
   list-style: none;
   border-bottom: 1px solid #efefef;
   display: block;
@@ -319,7 +364,7 @@ img {
   text-align: center;
 }
 
-.mobile-navigation .main-navigation .nav-links a {
+.mobile-navigation .main-navigation ul a {
   color: #312783;
   font-family: "HossRoundBetaG Bold";
 }

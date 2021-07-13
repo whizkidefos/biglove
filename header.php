@@ -13,11 +13,15 @@
         </div>
 
         <nav class="main-navigation">
-            <div class="nav-links">
-                <a href="<?php get_site_url() ?>/about-blsc">about blsc</a>
-                <a href="<?php get_site_url() ?>/courses-and-coaching">courses & coaching</a>
-                <a href="<?php get_site_url() ?>/connect-with-us">connect with us</a>
-            </div>
+                
+                <?php
+                    $args = array(
+                        'theme_location'     =>  'main-menu',
+                        'container'          =>  'div',
+                        'container_class'    =>  'main-navigation'
+                    );
+                    wp_nav_menu( $args );
+                ?>
         </nav>
 
         <div class="nav-icons">
@@ -31,11 +35,14 @@
 
     <div class="mobile-navigation">
         <nav class="main-navigation">
-            <ul class="nav-links">
-                <li><a href="<?php get_site_url() ?>/about-blsc">about blsc</a></li>
-                <li><a href="<?php get_site_url() ?>/courses-and-coaching">courses & coaching</a></li>
-                <li><a href="<?php get_site_url() ?>/connect-with-us">connect with us</a></li>
-            </ul>
+            <?php
+                $args = array(
+                    'theme_location'     =>  'main-menu',
+                    'container'          =>  'div',
+                    'container_class'    =>  'main-navigation'
+                );
+                wp_nav_menu( $args );
+            ?>
             <div class="nav-icons">
                 <a href="https://facebook.com/blsc" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://instagram.com/blsc" target="_blank"><i class="fab fa-instagram"></i></a>
