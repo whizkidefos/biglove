@@ -16,8 +16,8 @@
                     <p><span><i class="fas fa-phone"></i> Call us on:</span>07803 715 240</p>
                     <p><span><i class="far fa-envelope"></i> Email us via:</span>bigloveswinclub@gmail.com</p>
                     <div class="footer-icons">
-                        <a href="https://facebook.com/blsc" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://instagram.com/blsc" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/bigloveswimclub/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/bigloveswimclub/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

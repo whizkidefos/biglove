@@ -9,7 +9,7 @@ $the_query = new WP_Query( $args );
 <header class="inner-page-banner">
     
     <div class="banner-image-block">
-        <img src="<?php t(); ?>/images/courses-image.png" alt="courses page banner">
+        <img src="<?php t(); ?>/images/courses-coaching.jpg" alt="courses page banner">
     </div>
     <div class="banner-title-block">
         <h1>What we <br> get up to. </h1>
@@ -100,5 +100,9 @@ $the_query = new WP_Query( $args );
         </div>
     </div>
 </section>
+
+<?php get_template_part('components/keep-up-with-club'); ?>
+
+<?php get_template_part('/components/what-swimmers-say'); ?>
 
 <?php get_footer(); ?>

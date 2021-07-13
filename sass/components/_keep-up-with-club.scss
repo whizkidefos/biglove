@@ -97,9 +97,26 @@
 }
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-	opacity: 0.8;
+	opacity: 0.6;
 }
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
 	opacity: 0;
+}
+
+.mfp-image-holder .mfp-content {
+	max-width: 80% !important;
+}
+
+.mfp-image-holder .mfp-close {
+	background: $purple !important;
+	color: white !important;
+	padding-right: 6px;
+	width: 50px !important;
+	height: 50px !important;
+	line-height: 50px !important;
+	text-align: center !important;
+	border-radius: 50px;
+	padding: 1px 8px;
+	margin: 16px -18px;
 }

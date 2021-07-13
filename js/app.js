@@ -2,7 +2,8 @@
 jQuery(document).ready(function ($) {
 	$(".burger").click(function () {
 		$(".burger").toggleClass("open");
-		$(".mobile-navigation").slideToggle('slow');
+		$(".mobile-navigation").slideToggle("slow");
+    $("body").toggleClass("overflow-hidden");
 	});
 
   //Magnific Popup

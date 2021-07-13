@@ -25,8 +25,8 @@
         </nav>
 
         <div class="nav-icons">
-            <a href="https://facebook.com/blsc" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://instagram.com/blsc" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/bigloveswimclub/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/bigloveswimclub/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="burger">
             <span class="burger-bar"></span>
@@ -44,8 +44,8 @@
                 wp_nav_menu( $args );
             ?>
             <div class="nav-icons">
-                <a href="https://facebook.com/blsc" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://instagram.com/blsc" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/bigloveswimclub/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/bigloveswimclub/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             <img src="<?php t() ?>/images/gray-heart.svg" alt="gray heart">
         </nav>
