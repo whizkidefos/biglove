@@ -9,9 +9,9 @@ footer {
 		letter-spacing: 2px;
 	}
 
-	// img {
-	// 	width: 90%;
-	// }
+	img {
+		width: 90%;
+	}
 }
 
 .footer-menu a {
@@ -71,7 +71,7 @@ footer {
 	height: 50px;
 	transition: 350ms;
 
-	z-index: 99;
+	z-index: 20;
 
 	&:hover {
 		background: $red;

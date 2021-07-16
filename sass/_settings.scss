@@ -33,6 +33,7 @@ $light-gray: #efefef;
 html,
 body {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 ::selection {
@@ -45,7 +46,8 @@ main {
 }
 
 .overflow-hidden {
-	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 h1 {

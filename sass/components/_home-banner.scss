@@ -52,7 +52,7 @@
 
 @media (max-width: 980px) {
 	.home-banner {
-		padding-bottom: 2rem;
+		padding-bottom: 0;
 	}
 
 	.home-banner .container {
@@ -68,6 +68,7 @@
 	.big-love-image {
 		margin-left: 0;
 		width: 100%;
+		height: 100%;
 	}
 
 	.scroll-down {
@@ -75,9 +76,15 @@
 	}
 }
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
 	.scroll-down {
 		display: none;
+	}
+
+	.big-love-text {
+		width: 100%;
+		height: auto;
+		margin-bottom: -4rem;
 	}
 }
 

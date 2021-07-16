@@ -4,9 +4,9 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="footer-menu">
-                    <a href="">about blsc</a>
-                    <a href="">courses & coaching</a>
-                    <a href="">connect with us</a>
+                    <a href="<?php get_site_url(); ?>/about-blsc">about blsc</a>
+                    <a href="<?php get_site_url(); ?>/courses-and-coaching">courses & coaching</a>
+                    <a href="<?php get_site_url(); ?>/connect-with-us">connect with us</a>
                     <a href="<?php get_site_url(); ?>/terms-conditions">terms & conditions</a>
                     <a href="<?php get_site_url(); ?>/privacy-policy">privacy policy</a>
                 </div>

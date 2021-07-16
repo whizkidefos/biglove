@@ -89,7 +89,7 @@ $the_query = new WP_Query( $args );
                     <h6 class="price">£<?php the_field('price'); ?> per session</h6>
                     <p><?php echo wp_trim_words( get_the_content(), 40, '...' ); ?></p>
                     <br>
-                    <a href="<?php get_site_url(); ?>/connect-with-us" class="btn-red">Book your place</a>
+                    <a href="<?php the_permalink(); ?>" class="btn-red">Book your place</a>
                 </div>
             </div>
             <?php endwhile;

@@ -5,7 +5,7 @@
             <img src="<?php t(); ?>/images/hero-message.png" alt="hero message">
         </div>
         <div class="big-love-image">
-            <!-- <img src="</?php t(); ?>/images/gray-heart.svg" alt="gray heart icon" class="gray-heart-icon"> -->
+            
             <img src="<?php t(); ?>/images/hero-images.png" alt="hero image group">
         </div>
     </div>
