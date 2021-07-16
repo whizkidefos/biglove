@@ -55,6 +55,7 @@
 
 		.heart-icons {
 			margin-left: 20px;
+			margin-top: -10px;
 		}
 	}
 }
@@ -90,5 +91,15 @@
 		h1 {
 			font-size: 45px;
 		}
+	}
+
+	.courses-and-coaching {
+		h2 {
+			font-size: 50px;
+		}
+	}
+
+	.course-block .difficulty-level .heart-icons i {
+		font-size: 14px;
 	}
 }

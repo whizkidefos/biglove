@@ -1121,6 +1121,12 @@ footer img {
   background: #e2335a;
 }
 
+@media (max-width: 580px) {
+  .footer-links p {
+    font-size: 12px;
+  }
+}
+
 .page-header {
   background: #efefef;
   color: #e2335a;
@@ -1310,6 +1316,7 @@ footer img {
 
 .course-block .difficulty-level .heart-icons {
   margin-left: 20px;
+  margin-top: -10px;
 }
 
 @media (max-width: 980px) {
@@ -1343,5 +1350,11 @@ footer img {
 @media (max-width: 680px) {
   .courses-and-coaching-banner h1 {
     font-size: 45px;
+  }
+  .courses-and-coaching h2 {
+    font-size: 50px;
+  }
+  .course-block .difficulty-level .heart-icons i {
+    font-size: 14px;
   }
 }

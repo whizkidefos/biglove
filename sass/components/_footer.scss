@@ -77,3 +77,11 @@ footer {
 		background: $red;
 	}
 }
+
+@media (max-width: 580px) {
+	.footer-links {
+		p {
+			font-size: 12px;
+		}
+	}
+}
