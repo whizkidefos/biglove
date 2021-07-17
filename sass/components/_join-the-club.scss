@@ -58,3 +58,11 @@ div.wpforms-container-full .wpforms-form textarea {
 div.wpforms-container-full .wpforms-form textarea {
 	resize: none;
 }
+
+@media (max-width: 768px) {
+	.join-the-club {
+		h2 {
+			font-size: 50px;
+		}
+	}
+}

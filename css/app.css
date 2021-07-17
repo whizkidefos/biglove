@@ -144,10 +144,18 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .inner-page-banner .banner-image-block,
   .inner-page-banner .banner-title-block {
     width: 100%;
+    padding: 0 10px;
+    margin-left: -30px;
   }
   .inner-page-banner .banner-title-block {
     margin-left: 2rem;
@@ -486,7 +494,7 @@ img {
   }
   .big-love-text {
     width: 100%;
-    height: 550px;
+    height: auto;
     margin-bottom: -4rem;
   }
   .big-love-image {
@@ -757,6 +765,12 @@ div.wpforms-container-full .wpforms-form textarea {
   resize: none;
 }
 
+@media (max-width: 768px) {
+  .join-the-club h2 {
+    font-size: 50px;
+  }
+}
+
 .what-swimmers-say {
   padding: 5rem 0;
 }
@@ -846,6 +860,12 @@ div.wpforms-container-full .wpforms-form textarea {
   max-width: 80%;
   width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .qualifications h3 {
+    font-size: 35px;
+  }
 }
 
 .keep-up-with-club {
@@ -1099,7 +1119,7 @@ footer img {
 #backToTop {
   display: none;
   position: fixed;
-  right: 30px;
+  right: 10px;
   bottom: 20px;
   border: none;
   border-radius: 100%;
@@ -1187,6 +1207,28 @@ footer img {
   font-size: 65px;
 }
 
+@media (max-width: 768px) {
+  .single-course-page-banner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .single-course-page-banner img {
+    width: 100%;
+  }
+  .single-course-page-banner .banner-title-block h1 {
+    font-size: 35px;
+    margin-left: -30px;
+    padding: 0 10px;
+  }
+  .single-course-content h2 {
+    font-size: 50px;
+  }
+}
+
 .page-not-found {
   color: #312783;
   padding: 12rem 0;
@@ -1245,6 +1287,9 @@ footer img {
 }
 
 @media (max-width: 768px) {
+  .about h2 {
+    font-size: 50px;
+  }
   .lisa {
     padding: 4rem 1rem 2rem 1rem;
   }

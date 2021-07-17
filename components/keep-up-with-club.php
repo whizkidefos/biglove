@@ -1,7 +1,7 @@
 <section class="keep-up-with-club">
     <div class="container text-center py-2 mb-5">
         <h2>Keep up with the club</h2>
-        <a href="" target="_blank"><i class="fab fa-instagram"></i> bigloveswimclub</a>
+        <a href="https://www.instagram.com/bigloveswimclub/" target="_blank"><i class="fab fa-instagram"></i> bigloveswimclub</a>
     </div>
 
     <div class="container">

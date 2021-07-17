@@ -23,3 +23,11 @@
 		margin: 0 auto;
 	}
 }
+
+@media (max-width: 768px) {
+	.qualifications {
+		h3 {
+			font-size: 35px;
+		}
+	}
+}

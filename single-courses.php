@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
 
-<header class="inner-page-banner">
+<header class="inner-page-banner single-course-page-banner">
     
     <div class="banner-image-block">
-        <!-- <img src="</?php t(); ?>/images/courses-image.png" alt="courses page banner"> -->
         <?php the_post_thumbnail(); ?>
     </div>
     <div class="banner-title-block course-page-title">
