@@ -13,7 +13,7 @@
 </header>
 
 
-<article class="single-course-content">
+<article class="single-course-content" data-aos="fade-up" data-aos-duration="2000">
     <div class="difficulty-level">
         <h6>Difficulty level:</h6>
         <?php if(get_field('difficulty_level') == '1'): ?>

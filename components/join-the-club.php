@@ -1,4 +1,4 @@
-<section class="join-the-club">
+<section class="join-the-club" data-aos="fade-up" data-aos-duration="2000">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-6 col-md-6 col-sm-12 join-the-club-content">

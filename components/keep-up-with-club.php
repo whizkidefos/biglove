@@ -1,4 +1,4 @@
-<section class="keep-up-with-club">
+<section class="keep-up-with-club" data-aos="fade-up" data-aos-duration="2000">
     <div class="container text-center py-2 mb-5">
         <h2>Keep up with the club</h2>
         <a href="https://www.instagram.com/bigloveswimclub/" target="_blank"><i class="fab fa-instagram"></i> bigloveswimclub</a>

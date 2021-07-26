@@ -1,4 +1,4 @@
-<section class="qualifications">
+<section class="qualifications" data-aos="fade-up" data-aos-duration="2000">
     <div class="container text-center">
         <h3>Qualifications</h3>
         <p>Fully insured via Institute of Swimming</p>

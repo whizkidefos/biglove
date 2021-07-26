@@ -6,7 +6,7 @@ $args = array( 'post_type' => 'courses', 'posts_per_page' => 10 );
 $the_query = new WP_Query( $args ); 
 ?>
 
-<header class="inner-page-banner">
+<header class="inner-page-banner fade-in-top">
     
     <div class="banner-image-block">
         <img src="<?php t(); ?>/images/courses-coaching.jpg" alt="courses page banner">
@@ -17,7 +17,7 @@ $the_query = new WP_Query( $args );
     
 </header>
 
-<section class="courses-and-coaching">
+<section class="courses-and-coaching" data-aos="fade-up" data-aos-duration="2000">
     <div class="container">
         <h2 class="text-center">Courses & Coaching</h2>
         <div class="all-courses">

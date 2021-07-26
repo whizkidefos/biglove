@@ -3,7 +3,7 @@ $args = array( 'post_type' => 'courses', 'posts_per_page' => 4 );
 $home_query = new WP_Query( $args ); 
 ?>
 
-<section class="showcase" id="showcase">
+<section class="showcase" id="showcase" data-aos="fade-up" data-aos-duration="2000">
     <article class="container welcome">
         <div class="welcome-image">
             <img src="<?php t(); ?>/images/welcome-image.jpg" alt="welcome image">

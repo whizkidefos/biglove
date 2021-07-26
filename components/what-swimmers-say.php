@@ -1,4 +1,4 @@
-<section class="what-swimmers-say">
+<section class="what-swimmers-say" data-aos="fade-up" data-aos-duration="2000">
     <div class="container">
         <h3 class="text-center">What our swimmers are saying</h3>
         <img src="<?php t(); ?>/images/blue-heart-quote-icon.svg" alt="heart with quote">

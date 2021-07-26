@@ -4,7 +4,7 @@
  */
 ?>
 
-<header class="inner-page-banner">
+<header class="inner-page-banner fade-in-top">
     
     <div class="banner-image-block">
         <img src="<?php t(); ?>/images/about-hero.png" alt="courses page banner">
