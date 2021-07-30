@@ -94,3 +94,64 @@ if( function_exists('acf_add_options_page') ) {
 	// ));
 	
 }
+
+/*============ Custom Login Functions ===========*/
+//Replace style-login.css with the name of your custom CSS file
+function blsc_custom_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
+}
+
+//This loads the function above on the login page
+add_action( 'login_enqueue_scripts', 'blsc_custom_login_stylesheet' );
+
+function admin_login_redirect( $redirect_to, $request, $user ) {
+    global $user;
+    
+    if( isset( $user->roles ) && is_array( $user->roles ) ) {
+       if( in_array( "administrator", $user->roles ) ) {
+       return $redirect_to;
+       } 
+       else {
+       return home_url();
+       }
+    }
+    else {
+    return $redirect_to;
+    }
+ }
+ 
+ add_filter("login_redirect", "admin_login_redirect", 10, 3);
+
+ function login_checked_remember_me() {
+    add_filter( 'login_footer', 'rememberme_checked' );
+}
+add_action( 'init', 'login_checked_remember_me' );
+
+function rememberme_checked() {
+    echo "<script>document.getElementById('rememberme').checked = true;</script>";
+}
+
+function blsc_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'blsc_login_logo_url' );
+    
+function blsc_login_logo_url_title() {
+    return 'Big Love Swim Club';
+}
+add_filter( 'login_headertitle', 'blsc_login_logo_url_title' );
+
+// Custom Logo
+function blsc_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url('./images/logo.svg');
+        height:100px;
+        width:300px;
+        background-size: 300px 100px;
+        background-repeat: no-repeat;
+        padding-bottom: 10px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'blsc_login_logo' );

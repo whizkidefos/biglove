@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "HossRoundBetaG Regular";
+	src: url("./fonts/HossRoundBetaG_Regular.otf");
+}
+
+body.login div#login h1 a {
+    background-image: url('./images/logo.svg');
+    background-position: bottom;
+}
+
+#login {
+    width: 400px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+body.login div#login form#loginform input {
+    font-size: 15px;
+    color: #312783;
+  }
+
+  body.login div#login form#loginform p.submit input#wp-submit {
+    background-color:#312783 !important;
+    color: #ffffff;
+    border: 1px solid #312783;
+    font-family: "HossRoundBetaG Regular";
+    margin: 10px 10px 10px 10px;
+    padding: 5px 35px;
+    transition: 250ms;
+  }
+
+  body.login div#login form#loginform p.submit input#wp-submit:hover {
+      background-color: #e2335a !important;
+      border-color: #e2335a;
+  }
+
+  body.login div#login form#loginform p label,
+  body.login div#login form#loginform input,
+  body.login div#login form#loginform p.forgetmenot,
+  body.login div#login p#backtoblog a {
+      color: #312783;
+      font-family: "HossRoundBetaG Regular";
+  }
+
+  body.login div#login form#loginform p label:hover,
+  body.login div#login form#loginform input:hover,
+  body.login div#login form#loginform p.forgetmenot:hover,
+  body.login div#login p#backtoblog a:hover {
+      color: #e2335a;
+  }
+
+  body.login div#login p#nav a {
+      display: none;
+  }
