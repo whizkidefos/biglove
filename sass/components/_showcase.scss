@@ -58,13 +58,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .custom-card {
-	width: calc(50% - 10px);
+	width: calc(50% - 20px);
 	height: 610px;
-	margin-bottom: 20px;
+	margin: 10px;
 	border-radius: 0 0 10px 10px;
 	background: white;
 	position: relative;
