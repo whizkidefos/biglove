@@ -133,7 +133,7 @@ img {
 
 .inner-page-banner img {
   width: 100%;
-  height: 550px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -332,6 +332,7 @@ img {
   position: relative;
   -webkit-transition: all 250ms;
   transition: all 250ms;
+  letter-spacing: 1px;
 }
 
 .main-navigation ul li a::after {
@@ -347,6 +348,7 @@ img {
 
 .main-navigation ul li a:hover {
   color: #0090df;
+  letter-spacing: 1.1px;
 }
 
 .main-navigation ul li a:hover::after {
@@ -499,6 +501,7 @@ img {
 .mobile-navigation .main-navigation ul a {
   color: #312783;
   font-family: "HossRoundBetaG Bold";
+  letter-spacing: 1px;
 }
 
 .mobile-navigation .main-navigation .nav-icons {
@@ -554,7 +557,7 @@ img {
 }
 
 .big-love-text {
-  width: 35%;
+  width: 50%;
   opacity: 0.9;
   position: relative;
   z-index: 1;
@@ -690,7 +693,7 @@ img {
 }
 
 .showcase article .welcome-image img {
-  height: 500px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -711,7 +714,7 @@ img {
 .showcase article h2 {
   color: #e2335a;
   font-family: "HossRoundBetaG Heavy", sans-serif !important;
-  font-size: 70px;
+  font-size: 65px;
   margin-left: -6rem;
   margin-bottom: 3rem;
   text-transform: uppercase;
@@ -845,6 +848,11 @@ img {
 
 .join-the-club span {
   font-weight: 600;
+}
+
+.join-the-club span a {
+  color: #312783;
+  font-weight: bold;
 }
 
 div.wpforms-container-full .wpforms-form input[type="date"],

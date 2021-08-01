@@ -31,6 +31,7 @@
 			padding: 0 20px;
 			position: relative;
 			transition: all 250ms;
+			letter-spacing: 1px;
 
 			&::after {
 				content: ". . .";
@@ -43,6 +44,7 @@
 
 			&:hover {
 				color: $blue;
+				letter-spacing: 1.1px;
 			}
 
 			&:hover::after {
@@ -170,6 +172,7 @@
 			a {
 				color: $purple;
 				font-family: "HossRoundBetaG Bold";
+				letter-spacing: 1px;
 			}
 		}
 		.nav-icons {

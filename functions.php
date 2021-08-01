@@ -4,19 +4,20 @@
 function biglove_files() {
     // if ( !is_admin() ) wp_deregister_script('jquery');
    
+    //CSS
     wp_enqueue_style( "bootstrap_css", get_template_directory_uri()."/css/bootstrap.min.css" );
     wp_enqueue_style( "swiper_css", get_template_directory_uri()."/css/swiper.min.css" );
     wp_enqueue_style( "aos_css", "https://unpkg.com/aos@2.3.1/dist/aos.css" );
     wp_enqueue_style( "magnific_css", get_template_directory_uri()."/css/magnific-popup.css" );
     wp_enqueue_style( "app_css", get_template_directory_uri()."/css/app.css" );
 
+    //JS
     wp_enqueue_script( "font_awesome_kit", "https://kit.fontawesome.com/c95cb70159.js", array(), '5.15.1', true );
-    // wp_enqueue_script( 'jquery', get_template_directory_uri(). '/js/jquery.min.js', array(), '3.6.0', true );
     wp_enqueue_script( 'bootstrap_js', get_template_directory_uri(). '/js/bootstrap.min.js', array(), '5.1.0', true );
-    
 	wp_enqueue_script( 'swiper_js', get_template_directory_uri().'/js/swiper.min.js', array(), '6.7.0', true );
     wp_enqueue_script( 'magnific_js', get_template_directory_uri().'/js/magnific-popup.min.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script( 'aos_js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', '2.3.1', true );
+    wp_enqueue_script( 'jquery_matchHeight_js', get_template_directory_uri().'/js/jquery.matchHeight.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script( 'app_js', get_template_directory_uri().'/js/app.js', array('jquery'), '1.0.0', true );
 }
 
@@ -50,7 +51,6 @@ function biglove_setup() {
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'title-tag' );
     add_theme_support( 'menus' );
-    //add_theme_support( 'woocommerce' );
 
     // Register Menus
     function biglove_menus() {
@@ -84,24 +84,22 @@ if( function_exists('acf_add_options_page') ) {
 	// acf_add_options_sub_page(array(
 	// 	'page_title' 	=> 'Theme Header Settings',
 	// 	'menu_title'	=> 'Header',
-	// 	'parent_slug'	=> 'theme-general-settings',
+	// 	'parent_slug'	=> 'blsc-general-settings',
 	// ));
 	
 	// acf_add_options_sub_page(array(
 	// 	'page_title' 	=> 'Theme Footer Settings',
 	// 	'menu_title'	=> 'Footer',
-	// 	'parent_slug'	=> 'theme-general-settings',
+	// 	'parent_slug'	=> 'blsc-general-settings',
 	// ));
 	
 }
 
 /*============ Custom Login Functions ===========*/
-//Replace style-login.css with the name of your custom CSS file
+//Replace style-login.css with the login custom CSS file
 function blsc_custom_login_stylesheet() {
     wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
 }
-
-//This loads the function above on the login page
 add_action( 'login_enqueue_scripts', 'blsc_custom_login_stylesheet' );
 
 function admin_login_redirect( $redirect_to, $request, $user ) {

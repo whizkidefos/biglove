@@ -1,5 +1,5 @@
 //Navigation
-jQuery(document).ready(function ($) {
+jQuery(function ($) {
   $(".burger").click(function () {
     $(".burger").toggleClass("open");
     $(".mobile-navigation").slideToggle("slow");
@@ -13,9 +13,13 @@ jQuery(document).ready(function ($) {
     disableOn: 400
   });
 
+  //jQuery MatchHeight
+  $(".gallery-card").matchHeight();
+
 });
 
-// Sliders
+// *************** Sliders *****************//
+// Quotes
 var quote = new Swiper('.quote-container', {
   loop: true,
   autoplay: {
@@ -28,44 +32,35 @@ var quote = new Swiper('.quote-container', {
   },
 });
 
+// Gallery
 var gallery = new Swiper('.gallery-container', {
   loop: true,
   autoplay: {
     delay: 5000,
   },
-  effect: 'coverflow',
   grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 5,
-    slideShadows: true,
-  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+
   speed: 2000,
   navigation: {
     nextEl: '.gallery-button-next',
     prevEl: '.gallery-button-prev',
   },
   breakpoints: {
-    // when window width is >= 320px
-    320: {
+    640: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 10,
     },
-    // when window width is >= 480px
-    680: {
+    768: {
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
-    // when window width is >= 640px
-    980: {
+    1024: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
-  }
+  },
 });
 
 // Back to top
