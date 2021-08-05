@@ -9,8 +9,14 @@ jQuery(function ($) {
   //Magnific Popup
   $('.image-link').magnificPopup({
     type: 'image',
+    gallery: {
+      enabled: true,
+    },
+    midClick: true,
+    closeOnBgClick: true,
     removalDelay: 100,
-    disableOn: 400
+    disableOn: 400,
+    arrowMarkup: '<button title="%title%" type="button" class="fas fa-chevron-right"><i class="fas fa-chevron-right"></i></button>', // markup of an arrow button
   });
 
   //jQuery MatchHeight
@@ -38,7 +44,6 @@ var gallery = new Swiper('.gallery-container', {
   autoplay: {
     delay: 5000,
   },
-  grabCursor: true,
   slidesPerView: 1,
   spaceBetween: 10,
 
