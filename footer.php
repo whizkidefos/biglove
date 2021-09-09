@@ -24,6 +24,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="footer-logo">
                     <a href="/"><img src="<?php t() ?>/images/logo-white.svg" alt="logo white"></a>
+                    <small class="footer-credits">
+                        Designed by <b>JFCreative</b>, Developed by <a href="https://iefosa.me" class="" target="_blank">IEfosa</a>
+                    </small>
                 </div>
             </div>
         </div>
